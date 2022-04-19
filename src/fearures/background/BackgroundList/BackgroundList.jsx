@@ -40,7 +40,7 @@ function BackgroundVideo({ videoList }) {
 
       <div className="background-video">
         <video
-          className="day"
+          className="video"
           autoPlay
           muted
           loop
@@ -48,21 +48,21 @@ function BackgroundVideo({ videoList }) {
             day === true && rain === false && inOut === false ? { opacity: 1 } : { opacity: 0 }
           }
         >
-          <source className="day-sunny" type="video/mp4" src={videoList[0].url} />
+          <source className={videoList[0].name} type="video/mp4" src={videoList[0].url} />
         </video>
 
         <video
-          className="day"
+          className="video"
           autoPlay
           muted
           loop
           style={day === true && rain === true && inOut === false ? { opacity: 1 } : { opacity: 0 }}
         >
-          <source className="day-rainy" type="video/mp4" src={videoList[2].url} />
+          <source className={videoList[2].name} type="video/mp4" src={videoList[2].url} />
         </video>
 
         <video
-          className="day"
+          className="video"
           autoPlay
           muted
           loop
@@ -70,11 +70,11 @@ function BackgroundVideo({ videoList }) {
             day === false && rain === false && inOut === false ? { opacity: 1 } : { opacity: 0 }
           }
         >
-          <source className="day-sunny" type="video/mp4" src={videoList[1].url} />
+          <source className={videoList[1].name} type="video/mp4" src={videoList[1].url} />
         </video>
 
         <video
-          className="day"
+          className="video"
           autoPlay
           muted
           loop
@@ -82,11 +82,11 @@ function BackgroundVideo({ videoList }) {
             rain === true && day === false && inOut === false ? { opacity: 1 } : { opacity: 0 }
           }
         >
-          <source className="day-sunny" type="video/mp4" src={videoList[3].url} />
+          <source className={videoList[3].name} type="video/mp4" src={videoList[3].url} />
         </video>
 
         <video
-          className="day"
+          className="video"
           autoPlay
           muted
           loop
@@ -94,37 +94,37 @@ function BackgroundVideo({ videoList }) {
             day === false && inOut === true && rain === false ? { opacity: 1 } : { opacity: 0 }
           }
         >
-          <source className="day-sunny" type="video/mp4" src={videoList[4].url} />
+          <source className={videoList[4].name} type="video/mp4" src={videoList[4].url} />
         </video>
 
         <video
-          className="day"
+          className="video"
           autoPlay
           muted
           loop
           style={day === false && inOut === true && rain === true ? { opacity: 1 } : { opacity: 0 }}
         >
-          <source className="day-sunny" type="video/mp4" src={videoList[6].url} />
+          <source className={videoList[6].name} type="video/mp4" src={videoList[6].url} />
         </video>
 
         <video
-          className="day"
+          className="video"
           autoPlay
           muted
           loop
           style={day === true && inOut === true && rain === false ? { opacity: 1 } : { opacity: 0 }}
         >
-          <source className="day-sunny" type="video/mp4" src={videoList[5].url} />
+          <source className={videoList[5].name} type="video/mp4" src={videoList[5].url} />
         </video>
 
         <video
-          className="day"
+          className="video"
           autoPlay
           muted
           loop
           style={day === true && inOut === true && rain === true ? { opacity: 1 } : { opacity: 0 }}
         >
-          <source className="day-sunny" type="video/mp4" src={videoList[7].url} />
+          <source className={videoList[7].name} type="video/mp4" src={videoList[7].url} />
         </video>
       </div>
     </div>
