@@ -24,10 +24,10 @@ function BackgroundVideo({ videoList }) {
   return (
     <div className="background">
       <div className="city-rain">
-        <Button handlePopover={handleRain} isOn={!rain} btnName="swapDay" />
+        <Button handlePopover={handleRain} isOn={!rain} btnName="swapRain" />
       </div>
-      <div className="city-ra">
-        <Button handlePopover={handleVideo} isOn={day} btnName="swapRain" />
+      <div className="city-rain1">
+        <Button handlePopover={handleVideo} isOn={day} btnName="swapDay" />
       </div>
       <div className="enter">
         <PopoverBtn
