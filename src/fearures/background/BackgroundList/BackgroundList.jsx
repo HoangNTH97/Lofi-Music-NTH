@@ -27,7 +27,7 @@ function BackgroundVideo({ videoList }) {
       <Header handleVideo={handleVideo} />
       <div className="background">
         <div className="city-rain">
-          <Button handlePopover={handleRain} isOn={!rain} btnName="swapDay" />
+          <Button handlePopover={handleRain} isOn={!rain} btnName="City Rain" />
         </div>
 
         <div className="enter">
