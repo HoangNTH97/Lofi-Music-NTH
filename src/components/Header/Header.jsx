@@ -17,7 +17,7 @@ function Header({ handleVideo }) {
   return (
     <div>
       <div className="header">
-        <div className="header-logo">
+        <div className="header-logo" onClick={() => window.location.reload()}>
           <img src={logo} alt="" />
         </div>
         <div className="header-item">
