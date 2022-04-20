@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import logo from '../../assets/Media/logo.0cbf9e63b4a021661126.gif';
 import shareIcon from '../../assets/icon/share.svg';
@@ -8,12 +8,18 @@ import HeaderButton2 from '../HeaderButton2/HeaderButton2';
 import HeaderButton3 from '../HeaderButton3/HeaderButton3';
 
 import './Header.scss';
+import MenuList from '../MenuList/MenuList';
 
 Header.propTypes = {
   handleVideo: PropTypes.func.isRequired,
 };
 
 function Header({ handleVideo }) {
+  const [hide, setHide] = useState(true);
+  const hideMenu = () => {
+    setHide(!hide);
+  };
+
   return (
     <div>
       <div className="header">
@@ -31,7 +37,8 @@ function Header({ handleVideo }) {
           <img src={shareIcon} alt="" />
           <img src={fullScreenIcon} alt="" />
           <div className="Menu">
-            <img src={menuIcon} alt="" />
+            <img onClick={hideMenu} src={menuIcon} alt="" />
+            <MenuList hide={hide} />
           </div>
         </div>
       </div>
