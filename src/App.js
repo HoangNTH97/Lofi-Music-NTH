@@ -1,12 +1,12 @@
 import './App.css';
-import HeaderButton from './components/HeaderButton/HeaderButton';
+import Header from './components/Header/Header';
 import Background from './fearures/background/background';
 
 function App() {
   return (
     <div>
+      <Header />
       <Background />
-      <HeaderButton />
     </div>
   );
 }

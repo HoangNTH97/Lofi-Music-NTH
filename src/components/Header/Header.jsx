@@ -23,7 +23,9 @@ function Header(props) {
           <div className="header-premium">
             <HeaderButton3 text=" Premium 🚀" />
           </div>
-          <HeaderButton3 text="Sign Up" />
+          <div className="header-signup">
+            <HeaderButton3 text="Sign Up" />
+          </div>
           <img src={shareIcon} alt="" />
           <img src={fullScreenIcon} alt="" />
           <div className="relative">
