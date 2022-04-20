@@ -9,9 +9,11 @@ import HeaderButton3 from '../HeaderButton3/HeaderButton3';
 
 import './Header.scss';
 
-Header.propTypes = {};
+Header.propTypes = {
+  handleVideo: PropTypes.func.isRequired,
+};
 
-function Header(props) {
+function Header({ handleVideo }) {
   return (
     <div>
       <div className="header">
@@ -19,7 +21,7 @@ function Header(props) {
           <img src={logo} alt="" />
         </div>
         <div className="header-item">
-          <HeaderButton2 />
+          <HeaderButton2 handleVideo={handleVideo} />
           <div className="header-premium">
             <HeaderButton3 text=" Premium 🚀" />
           </div>

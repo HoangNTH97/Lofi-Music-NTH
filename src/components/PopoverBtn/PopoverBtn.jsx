@@ -9,7 +9,6 @@ PopoverBtn.propTypes = {
 };
 
 function PopoverBtn({ handlePopover, btnName, handleInOut, isOn }) {
-  console.log(isOn);
   const inOut = () => {
     handlePopover();
     handleInOut();
