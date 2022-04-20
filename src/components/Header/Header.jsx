@@ -30,7 +30,7 @@ function Header({ handleVideo }) {
           </div>
           <img src={shareIcon} alt="" />
           <img src={fullScreenIcon} alt="" />
-          <div className="relative">
+          <div className="Menu">
             <img src={menuIcon} alt="" />
           </div>
         </div>
