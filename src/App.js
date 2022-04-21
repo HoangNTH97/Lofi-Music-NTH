@@ -1,5 +1,5 @@
 import './App.css';
-import Background from './fearures/background/background';
+import Background from './features/background/background';
 
 function App() {
   return (
