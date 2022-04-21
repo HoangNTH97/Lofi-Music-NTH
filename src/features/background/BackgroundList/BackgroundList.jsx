@@ -3,7 +3,6 @@ import Header from '../../../components/Header/Header';
 import Button from '../../../components/PopoverAction/PopoverAction';
 import PopoverBtn from '../../../components/PopoverBtn/PopoverBtn';
 import './BackgroundList.scss';
-import abc from '../../../assets/Video/Exterior+-+Day.mp4';
 
 BackgroundVideo.propTypes = {};
 
@@ -50,7 +49,11 @@ function BackgroundVideo({ videoList }) {
               day === true && rain === false && inOut === false ? { opacity: 1 } : { opacity: 0 }
             }
           >
-            <source className={videoList[0].name} type="video/mp4" src={abc} />
+            <source
+              className={videoList[0].name}
+              type="video/mp4"
+              src="../../../assets/Video/Exterior+-+Day.mp4"
+            />
           </video>
 
           <video
