@@ -49,11 +49,7 @@ function BackgroundVideo({ videoList }) {
               day === true && rain === false && inOut === false ? { opacity: 1 } : { opacity: 0 }
             }
           >
-            <source
-              className={videoList[0].name}
-              type="video/mp4"
-              src="../../../assets/Video/Exterior+-+Day.mp4"
-            />
+            <source className={videoList[0].name} type="video/mp4" src={videoList[1].url} />
           </video>
 
           <video
